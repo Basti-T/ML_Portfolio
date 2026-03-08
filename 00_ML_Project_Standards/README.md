@@ -9,10 +9,11 @@ This repository defines my professional standards for Machine Learning. I priori
 ---
 
 ## 🏛️ Strategic Framework (Executive View)
-Before diving into the engineering laws, this visual summary outlines the high-level pillars of my methodology.
+*This visual summary outlines the high-level pillars of my methodology. Click the image to access the full documentation.*
 
-[![(PNG) ML Gold Standard](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.png)](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)
-*Click image to view the [Full Manifesto PDF](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)*
+[![ML Gold Standard Manifesto](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.png)](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)
+
+*If the image above is not loading, please ensure `The ML Gold Standard Business-First Engineering.png` is uploaded to this folder.*
 
 ---
 
