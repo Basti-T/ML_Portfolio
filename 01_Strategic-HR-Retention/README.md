@@ -4,25 +4,28 @@
 ---
 
 ## 🏛️ Executive Strategy & Tooling
-Standard HR models often prioritize overall accuracy, failing to detect the minority of employees who actually quit. This project implements a **"Recall-First" strategy**, successfully flagging **51% of all leavers**—a 3x improvement in actionable intelligence.
+Standard HR models often prioritize overall accuracy, failing to detect the minority of employees who actually quit. This project implements a **"Recall-First" strategy**, successfully flagging **51% of all leavers**—a 3x improvement in actionable intelligence. 
 
-| 📄 Strategic Analysis Report | 🛠️ Interactive Risk Dashboard |
-| :--- | :--- |
-| [![Report Preview](./presentations/Strategic%20Attrition%20Forecasting%20Predictive%20Risk%20Model.png)](./presentations/Strategic%20Attrition%20Forecasting%20Predictive%20Risk%20Model.pdf) | [![Tool Preview](./presentations/Enterprise%20Attrition%20Tool%20Interactive%20Risk%20Dashboard.png)](./presentations/Enterprise%20Attrition%20Tool%20Interactive%20Risk%20Dashboard.pdf) |
-| *Click to view Full Strategy PDF* | *Click to view Dashboard Guide PDF* |
+### 📄 Strategic Analysis Report 
+[![(PDF) Strategic Attrition Forecasting](./Presentations/Strategic%20Attrition%20Forecasting%20Predictive%20Risk%20Model.png)](./Presentations/Strategic%20Attrition%20Forecasting%20Predictive%20Risk%20Model.pdf)
+*Click image to view the [Full Strategy PDF](./Presentations/Strategic%20Attrition%20Forecasting%20Predictive%20Risk%20Model.pdf)*
+
+### 🛠️ Interactive Risk Dashboard
+[![(PDF) Enterprise Attrition Tool](./Presentations/Enterprise%20Attrition%20Tool%20Interactive%20Risk%20Dashboard.png)](./Presentations/Enterprise%20Attrition%20Tool%20Interactive%20Risk%20Dashboard.pdf)
+*Click image to view the [Dashboard Guide PDF](./Presentations/Enterprise%20Attrition%20Tool%20Interactive%20Risk%20Dashboard.pdf)*
 
 ---
 
 ## 🛠️ Project Components
 
-### 1. [Attrition Risk Analysis Model](./01_Attrition_Risk_Analysis_Model.ipynb)
+### 1. [Attrition Risk Analysis Model](./notebooks/01_Attrition_Risk_Analysis_Model.ipynb)
 The technical engine of the project. This pipeline handles data cleaning, **SMOTE balancing**, and model optimization, achieving a **Mean Recall of 0.80+**.
 * **The Strategic 8 Drivers:** Focuses on actionable levers like **Overtime**, **Monthly Income**, and **Job Level** while filtering out non-predictive noise.
 
-### 2. [Enterprise Attrition Tool (Dashboard)](./02_Interactive_Retention_Dashboard.ipynb)
+### 2. [Enterprise Attrition Tool (Dashboard)](./notebooks/02_Interactive_Retention_Dashboard.ipynb)
 A functional HR interface for real-time decision-making. 
 
-![HR Tool Demo](./presentations/Strategic%20Attrition%20Forecasting%20Predictive%20Risk%20Model.gif)
+![HR Tool Demo](./Presentations/Strategic%20Attrition%20Forecasting%20Predictive%20Risk%20Model.gif)
 
 * **What-If Simulations:** Adjust variables (e.g., Overtime or Salary) to see the immediate impact on risk scores.
 * **Bulk Reporting:** Upload department-wide data to identify "Flight-Risk Clusters" instantly.
@@ -40,7 +43,7 @@ Directly derived from the model's highest-weighted predictors:
 
 ## 💻 How to Use the Dashboard
 Because GitHub renders notebooks statically, the interactive widgets require a live environment:
-1. Open the **[Dashboard Notebook](./02_Interactive_Retention_Dashboard.ipynb)**.
+1. Open the **[Dashboard Notebook](./notebooks/02_Interactive_Retention_Dashboard.ipynb)**.
 2. Click the **"Open in Colab"** badge at the top.
 3. Run all cells to initialize the HR Tool.
 
