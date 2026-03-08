@@ -11,13 +11,11 @@ This repository defines my professional standards for Machine Learning. I priori
 ## 🏛️ Strategic Framework (Executive View)
 *This visual summary outlines the high-level pillars of my methodology. Click the image to access the full documentation.*
 
-[![ML Gold Standard Manifesto](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.png)](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)
-
-*If the image above is not loading, please ensure `The ML Gold Standard Business-First Engineering.png` is uploaded to this folder.*
+[![ML Gold Standard Manifesto](./presentations/The%20ML%20Gold%20Standard%20Business-First%20Engineering.png)](./presentations/The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)
 
 ---
 
-## 🚀 [Download the ML Standard Template (.ipynb)](./ML_Standard_Template.ipynb)
+## 🚀 [Download the ML Standard Template (.ipynb)](./notebooks/ML_Standard_Template.ipynb)
 *Use this pre-configured environment to jumpstart high-integrity ML pipelines with built-in validation layers and "The 10 Commandments" pre-coded.*
 
 ---
@@ -28,7 +26,7 @@ This repository defines my professional standards for Machine Learning. I priori
 * **`data/`**: Raw datasets (read-only).
 * **`visuals/`**: Exported plots, GIFs of widgets, and model performance charts.
 * **`notebooks/`**: The engine. Contains the end-to-end pipeline from EDA to Interactive UI.
-* **`Presentation/`**: The 5-slide Executive PDF (if not embedded in the README).
+* **`presentations/`**: The 5-slide Executive PDF (if not embedded in the README).
 * **`README.md`**: This Manifesto + The Executive Summary for the specific project.
 
 ---
