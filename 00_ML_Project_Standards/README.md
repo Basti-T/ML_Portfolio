@@ -8,6 +8,19 @@ This repository defines my professional standards for Machine Learning. I priori
 
 ---
 
+## 🏛️ Strategic Framework (Executive View)
+Before diving into the engineering laws, this visual summary outlines the high-level pillars of my methodology.
+
+[![(PNG) ML Gold Standard](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.png)](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)
+*Click image to view the [Full Manifesto PDF](./The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)*
+
+---
+
+## 🚀 [Download the ML Standard Template (.ipynb)](./ML_Standard_Template.ipynb)
+*Use this pre-configured environment to jumpstart high-integrity ML pipelines with built-in validation layers and "The 10 Commandments" pre-coded.*
+
+---
+
 ## 📂 I. Simplified Project Structure
 *Designed for clarity and high-speed iteration in Google Colab:*
 
@@ -23,7 +36,6 @@ This repository defines my professional standards for Machine Learning. I priori
 
 ### 1. The "Wall of Silence" (Data Splitting)
 * **The Law**: Data must be split before any human or machine "looks" at it.
-
 * **Small Data (<10k)**: Mandatory `StratifiedKFold` to maintain class ratios.
 * **Time-Series**: Use `TimeSeriesSplit`; never shuffle chronologically dependent data.
 
@@ -33,7 +45,6 @@ This repository defines my professional standards for Machine Learning. I priori
 
 ### 3. The Transformation Engine (Leakage Prevention)
 * **The Law**: Use `sklearn.pipeline.Pipeline` to automate scaling and modeling.
-
 * **Techniques**:
     * **Standardization**: For algorithms sensitive to magnitude (Linear Regression, SVM, KNN).
     * **Normalization**: For data with specific bounds or non-Gaussian distributions.
@@ -57,7 +68,6 @@ This repository defines my professional standards for Machine Learning. I priori
     * **Consistently Low Score**: Your model has high **Bias** (underfitting).
 * **Goal**: Find the "Sweet Spot" where the error is low and the score is stable across all folds.
 
-
 ### 7. The Post-Mortem (Error Analysis)
 * **The Law**: Analyze *why* the model failed on specific rows.
 * **Visuals**: Use Confusion Matrices for classification and Residual Plots for regression to see where the model is systematically biased.
@@ -75,4 +85,3 @@ This repository defines my professional standards for Machine Learning. I priori
 * **The Law**: If a stakeholder can't "touch" the model, they won't trust it.
 * **Interface**: Every project ends with an `ipywidgets` dashboard.
 * **The Hook**: A GIF in the README showing the model reacting to user input is the final proof of utility.
-
