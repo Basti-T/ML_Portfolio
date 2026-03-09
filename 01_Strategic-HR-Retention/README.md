@@ -16,19 +16,30 @@ Standard HR models often prioritize overall accuracy, failing to detect the mino
 
 ---
 
-## 🛠️ Project Components
+## 🛠️ Project Components & Navigation
 
-### 1. [Attrition Risk Analysis Model](./notebooks/01_Attrition_Risk_Analysis_Model.ipynb)
-The technical engine of the project. This pipeline handles data cleaning, **SMOTE balancing**, and model optimization, achieving a **Mean Recall of 0.80+**.
+This repository is organized into functional modules for ease of review. You can explore the logic and implementation in the folders below:
+
+### 1. [Risk Analysis Model](./notebooks/)
+Located in the `notebooks/` directory, the technical engine handles data cleaning, **SMOTE balancing**, and model optimization, achieving a **Mean Recall of 0.80+**.
 * **The Strategic 8 Drivers:** Focuses on actionable levers like **Overtime**, **Monthly Income**, and **Job Level** while filtering out non-predictive noise.
 
-### 2. [Enterprise Attrition Tool (Dashboard)](./notebooks/02_Interactive_Retention_Dashboard.ipynb)
-A functional HR interface for real-time decision-making. 
+### 2. [Enterprise Attrition Tool](./notebooks/)
+The interactive dashboard logic is housed within the `notebooks/` folder, providing a functional HR interface for real-time decision-making.
 
 ![HR Tool Demo](./Presentations/Strategic%20Attrition%20Forecasting%20Predictive%20Risk%20Model.gif)
 
 * **What-If Simulations:** Adjust variables (e.g., Overtime or Salary) to see the immediate impact on risk scores.
 * **Bulk Reporting:** Upload department-wide data to identify "Flight-Risk Clusters" instantly.
+
+---
+
+## 📂 Repository Directory
+| Folder | Contents |
+| :--- | :--- |
+| **[notebooks/](./notebooks/)** | Core AI logic, Model Training, and Interactive Dashboard code. |
+| **[Presentations/](./Presentations/)** | Executive PDFs, Strategy documentation, and visual demos. |
+| **[data/](./data/)** | Masked HR datasets used for model validation. |
 
 ---
 
@@ -41,13 +52,9 @@ Directly derived from the model's highest-weighted predictors:
 
 ---
 
-## 💻 How to Use the Dashboard
-Because GitHub renders notebooks statically, the interactive widgets require a live environment:
-1. Open the **[Dashboard Notebook](./notebooks/02_Interactive_Retention_Dashboard.ipynb)**.
-2. Click the **"Open in Colab"** badge at the top.
-3. Run all cells to initialize the HR Tool.
-
----
-
 ## 🏛️ Bottom Line Summary
 This project moves HR from a **cost center (replacing talent)** to a **strategic asset (preserving talent)**. By focusing on the tipping points where employees decide to exit, we provide the evidence-based justification needed to reallocate budgets toward high-impact retention.
+
+---
+**Author:** Sebastian Thurm  
+**Role:** Strategic Data Scientist & AI Architect
