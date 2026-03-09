@@ -6,7 +6,7 @@
 ---
 
 ## 📊 Executive Strategic Summary
-![Strategic Commander Summary](presentations/Hybrid_ML_Forecasting.png)
+![Strategic Commander Summary](presentations/Hybrid%20ML%20Forecasting.png)
 
 ---
 
