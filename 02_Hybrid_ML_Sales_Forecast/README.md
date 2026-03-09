@@ -1,5 +1,5 @@
 # 🚀 Strategic E-Commerce Commander: Hybrid ML Sales Forecast
-### *Bridging Data Science and Executive Strategy for Shopify Growth*
+### *Transforming Reactive Data into Executive Action & Operational Efficiency*
 
 [![View Project in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Basti-T/ML_Portfolio/blob/main/02_Hybrid_ML_Sales_Forecast/Forecast_Ecommerce_Business.ipynb)
 
@@ -11,48 +11,48 @@
 ---
 
 ## 📌 Strategic Overview
-This project transforms raw Shopify export data into a **proactive steering tool**. While standard analytics look backward, the Strategic Commander looks ahead, allowing leadership to simulate the revenue impact of marketing campaigns and set "Growth Challenges" for the business.
+This project bridges the gap between raw Shopify data and executive decision-making. By merging long-term seasonal intelligence with 30-day tactical momentum, it transforms static e-commerce data into a functional interface for leadership. 
 
-**Key Achievement:** By aligning warehouse staffing with predictive package volumes, this logic enables a **~12% improvement in labor efficiency**.
+**Key Achievement:** Implementation of this logic has historically contributed to a **~12% improvement in labor efficiency** by aligning warehouse staffing with forecasted package volumes.
 
 ---
 
-## 🧠 Hybrid Intelligence Architecture (Level 4 DS)
-The engine utilizes a sophisticated **Dual-Model Ensemble** designed to balance long-term trends with short-term stability:
+## 🧠 Hybrid Intelligence Architecture
 
-1.  **Prophet (The Strategic Base):** Decodes 2-year historical seasonality, holiday peaks, and weekday performance patterns. It provides the "Vision" for where sales should be based on long-term trends.
-2.  **XGBoost (The Tactical Anchor):** Focuses on the most recent 365 days, utilizing a **30-Day Stability Anchor** (Rolling Mean & Monthly Lag). This prevents the forecast from over-reacting to outliers while staying tethered to current market reality.
+The system utilizes a professional-grade **Dual-Model Ensemble** (Level 4 DS) as seen in your implementation:
 
-### Technical Implementation:
-* **Logarithmic Scaling:** Employs $log1p$ transformation to stabilize variance across high-growth periods.
-* **Stability Features:** Uses `lag_1`, `lag_7`, `lag_30`, and `rolling_30` to provide the model with tactical context.
-* **Dynamic Regressors:** Marketing campaigns are injected as binary regressors, allowing the models to learn the specific "Lift" of past promotions.
+* **Prophet (Strategic Base):** Decodes multi-year seasonality and holiday peaks. It provides the "Strategic Vision" based on long-term historical cycles.
+* **XGBoost (Tactical Anchor):** Uses a **30-day rolling mean** (`rolling_30`) and monthly lags (`lag_30`) to tether the forecast to recent performance, preventing "forecast drift".
+
+### Technical Highlights:
+* **Logarithmic Scaling:** Employs `np.log1p` transformation to stabilize variance across high-growth periods.
+* **Dynamic Regressors:** Marketing campaigns are injected as binary indicators, allowing the AI to learn the specific "Lift" of past events.
 
 ---
 
 ## 🛠️ Interactive Strategic Capabilities
-The notebook features an integrated **Management Interface** for real-time revenue simulation:
+The notebook features a custom-built **Management Interface** using `ipywidgets` for real-time simulations:
 
-* **Executive "Challenge" Slider:** Leadership can set growth targets (e.g., +15%) to visualize the daily sales trajectory required to hit long-term goals.
-* **Marketing Campaign Simulator:** Quickly test "what-if" scenarios by entering custom dates and expected lift percentages to see instant revenue projections.
-* **Operational Variance Tracking:** A dynamic table compares actual sales vs. targets, flagging "Hit" or "Miss" days to trigger immediate strategic pivots.
+* **Executive "Challenge" Engine:** Leadership can set growth targets via the `growth_slider` to visualize the exact daily sales required to hit benchmarks.
+* **Marketing Campaign Simulator:** Teams can input planned dates and expected lifts via the `quick_input` field to simulate revenue impact.
+* **Operational Staffing Alignment:** Translates sales forecasts into daily volume projections, allowing for standardized labor hour planning.
 
 ---
 
 ## 📂 Repository Structure
 | File | Description |
 | :--- | :--- |
-| [`Forecast_Ecommerce_Business.ipynb`](Forecast_Ecommerce_Business.ipynb) | **The Command Center.** Main interactive notebook with Hybrid Models and UI. |
-| [`data/Example_data_for_Forecast.ipynb`](data/Example_data_for_Forecast.ipynb) | **Data Creator.** Notebook used to generate or prepare the environment data. |
-| [`data/Shopify_NetSales.csv`](data/Shopify_NetSales.csv) | **Sample Data.** Masked dataset following standard Shopify export schema. |
-| `presentations/` | High-impact documentation including `Hybrid ML Forecasting.png`. |
+| [`Forecast_Ecommerce_Business.ipynb`](Forecast_Ecommerce_Business.ipynb) | **The Command Center.** Main interactive notebook with UI and Hybrid Models. |
+| [`data/Example_data_for_Forecast.ipynb`](data/Example_data_for_Forecast.ipynb) | **Data Creator.** Setup for the environment. |
+| [`data/Shopify_NetSales.csv`](data/Shopify_NetSales.csv) | **Sample Data.** Masked Shopify sales dataset. |
+| `presentations/` | Visual documentation and summary PNGs. |
 
 ---
 
 ## 📈 How to Use
-1.  **Prepare Data:** Navigate to the [`/data/`](data/) folder and run the generator to initialize your dataset.
-2.  **Run Command Center:** Open [`Forecast_Ecommerce_Business.ipynb`](Forecast_Ecommerce_Business.ipynb) in Google Colab and upload your CSV.
-3.  **Simulate:** Use the **Strategic Commander** sliders to adjust growth targets and forecast horizons.
+1.  **Prepare Data:** Navigate to `/data/` and run [`Example_data_for_Forecast.ipynb`](data/Example_data_for_Forecast.ipynb) to generate the CSV.
+2.  **Environment:** Open [`Forecast_Ecommerce_Business.ipynb`](Forecast_Ecommerce_Business.ipynb) in Colab and upload the generated CSV.
+3.  **Simulate:** Use the **Strategic Commander** sliders to adjust growth targets and marketing campaigns.
 
 ---
 **Author:** Sebastian Thurm  
