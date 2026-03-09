@@ -1,7 +1,7 @@
 # 🚀 Strategic E-Commerce Commander: Hybrid ML Sales Forecast
 ### *Transforming Reactive Data into Executive Action & Operational Efficiency*
 
-[![View Project in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Basti-T/ML_Portfolio/blob/main/02_Hybrid_ML_Sales_Forecast/Forecast_Ecommerce_Business.ipynb)
+[![Open In NBViewer](https://img.shields.io/badge/Render-NBViewer-orange)](https://nbviewer.org/github/Basti-T/ML_Portfolio/blob/main/02_Hybrid_ML_Sales_Forecast/Forecast_Ecommerce_Business.ipynb)
 
 ---
 
