@@ -33,7 +33,7 @@ The system utilizes a professional-grade **Dual-Model Ensemble** (Level 4 DS) to
 ## 📂 Project Structure & Navigation
 To maintain data integrity and a clean environment, this project is split into functional directories. Please navigate to the folders below to explore the code:
 
-* **[Main Notebooks](.)**: Contains the primary forecasting engine and the interactive **Strategic Commander** interface.
+* **[Main Notebooks](notebooks/)**: Contains the primary forecasting engine and the interactive **Strategic Commander** interface.
 * **[Data & Preparation](data/)**: Includes the `Shopify_NetSales.csv` sample and the notebook used to generate environment-ready data.
 * **[Presentations](presentations/)**: Visual assets and executive summary documentation.
 
