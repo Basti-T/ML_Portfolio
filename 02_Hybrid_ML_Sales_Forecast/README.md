@@ -3,6 +3,13 @@
 
 [![View Project in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Basti-T/ML_Portfolio/blob/main/02_Hybrid_ML_Sales_Forecast/Forecast_Ecommerce_Business.ipynb)
 
+---
+
+## 📊 Executive Strategic Summary
+![Strategic Commander Summary](presentations/Hybrid_ML_Forecasting.png)
+
+---
+
 ## 📌 Strategic Overview
 This project bridges the gap between raw Shopify data and executive decision-making. By merging long-term seasonal intelligence with 30-day tactical momentum, it transforms static e-commerce data into a functional interface for leadership. It provides the critical lead time required to optimize warehouse staffing and marketing spend, protecting the bottom line from operational waste.
 
@@ -10,17 +17,12 @@ This project bridges the gap between raw Shopify data and executive decision-mak
 
 ---
 
-## 📊 Executive Summary & Impact
-![Strategic Commander Summary](Presentations/Hybrid_ML_Forecasting.png)
-
----
-
 ## 🧠 Hybrid Intelligence Architecture (Level 4 DS)
 The system utilizes a professional-grade **Dual-Model Ensemble** to ensure the forecast is both visionary and realistic:
 
 1.  **Prophet (Strategic Base):** Decodes multi-year seasonality, holiday peaks, and weekday performance patterns. It provides the "Strategic Vision" based on long-term historical cycles.
-2.  **XGBoost (Tactical Anchor):** Uses a **30-day rolling mean** and lag features to tether the forecast to recent performance, preventing "forecast drift" during sudden market shifts.
 
+2.  **XGBoost (Tactical Anchor):** Uses a **30-day rolling mean** and lag features to tether the forecast to recent performance, preventing "forecast drift" during sudden market shifts.
 
 
 ### Technical Highlights:
@@ -38,23 +40,21 @@ The notebook features a custom-built **Management Interface** using `ipywidgets`
 * **The 3-Day Signal Logic:** If actual sales fall under the forecast for 3 consecutive days, the system flags the need for immediate strategy pivots.
 * **Operational Staffing Alignment:** Translates sales forecasts into package volume projections, allowing warehouse managers to standardize labor hours.
 
-
-
 ---
 
 ## 📂 Repository Structure
 | File | Description |
 | :--- | :--- |
 | [`Forecast_Ecommerce_Business.ipynb`](Forecast_Ecommerce_Business.ipynb) | **The Command Center.** Main interactive notebook with UI and Hybrid Models. |
-| [`Data_Generator.ipynb`](Data_Generator.ipynb) | **Synthetic Engine.** Generates realistic, non-sensitive sales data for testing. |
-| `Presentations/` | Contains high-impact business summaries and visual documentation (`Hybrid_ML_Forecasting.png`). |
-| `Shopify_NetSales_V3.csv` | **Sample Data.** Masked dataset following standard Shopify export schema. |
+| [`data/Example_data_for_Forecast.ipynb`](data/Example_data_for_Forecast.ipynb) | **Data Creator.** Notebook used to generate or prepare the environment data. |
+| [`data/Shopify_NetSales.csv`](data/Shopify_NetSales.csv) | **Sample Data.** Masked dataset following standard Shopify export schema. |
+| `presentations/` | Contains high-impact business documentation including `Hybrid_ML_Forecasting.png`. |
 
 ---
 
 ## 📈 How to Use
-1.  **Generate or Import Data:** Use the built-in Shopify Link (Step 1) or run the [`Data_Generator.ipynb`](Data_Generator.ipynb) to create a sample set.
-2.  **Environment:** Open the main notebook in [Google Colab](https://colab.research.google.com/github/Basti-T/ML_Portfolio/blob/main/02_Hybrid_ML_Sales_Forecast/Forecast_Ecommerce_Business.ipynb).
+1.  **Prepare Data:** Navigate to the `/data/` folder and run [`Example_data_for_Forecast.ipynb`](data/Example_data_for_Forecast.ipynb) to initialize your dataset.
+2.  **Environment:** Open the main notebook [`Forecast_Ecommerce_Business.ipynb`](Forecast_Ecommerce_Business.ipynb) in Google Colab.
 3.  **Simulation:** Use the **Strategic Commander** sliders to adjust growth targets, history lookback, and forecast horizons.
 4.  **Action:** Use the generated **Variance Table** to adjust warehouse staffing or marketing spend in real-time.
 
@@ -62,6 +62,10 @@ The notebook features a custom-built **Management Interface** using `ipywidgets`
 
 ## 🎯 The Bottom Line
 This tool moves E-commerce from a **"Guessing Culture"** to a **"Strategic Asset."** It eliminates information asymmetry between departments, ensuring that the CEO, Marketing, and the Warehouse are all steering toward the same number.
+
+---
+**Author:** Sebastian Thurm  
+**Role:** Strategic Data Scientist & AI Architect
 
 ---
 **Author:** Sebastian Thurm  
