@@ -49,4 +49,3 @@ To maintain data integrity and professional standards, this project is organized
 
 **Author:** Sebastian Thurm  
 **Role:** Head of Data, Machine Learning and AI  
-**Portfolio:** [Link to your Main Portfolio/GitHub Profile]
