@@ -4,7 +4,9 @@
 ---
 
 ## 📊 Executive Strategic Summary
-![Strategic Vendor Intelligence Summary](03_Strategic_Vendor_Intelligence_PCA/presentations/Summary.png)
+<div align="center">
+  <img src="03_Strategic_Vendor_Intelligence_PCA/presentations/Summary.png" alt="Strategic Vendor Intelligence Summary" width="900">
+</div>
 
 ---
 
