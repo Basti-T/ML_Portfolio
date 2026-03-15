@@ -4,7 +4,7 @@
 ---
 
 ## 📊 Executive Strategic Summary
-![Strategic Vendor Intelligence Summary](03_Strategic_Vendor_Intelligence_PCA/presentations/Strategic_Vendor_Intelligence_SVI.png)
+![Strategic Vendor Intelligence Summary](03_Strategic_Vendor_Intelligence_PCA/presentations/Summary.png)
 
 ---
 
