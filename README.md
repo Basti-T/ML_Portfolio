@@ -11,17 +11,17 @@ Welcome to my professional ML portfolio. This repository showcases high-impact *
 
 ### 🚀 **Strategic Vendor Intelligence (SVI)**
 **Unsupervised Learning | PCA & K-Means Clustering**
-* [cite_start]**Goal**: Optimize procurement and release working capital by identifying "Catalog Bloat" and "Supply Risk" in vendor portfolios[cite: 3, 10, 36].
-* [cite_start]**Methodology**: Engineered **22 weighted metrics** (e.g., Portfolio Purity, Revenue Density, Buffer Reliability) and used **Principal Component Analysis (PCA)** to condense multi-dimensional performance into a scannable **2D Strategic Map**[cite: 16, 17, 19].
-* [cite_start]**Impact**: Enabled a **15% reduction in purchasing costs**, a **23% sales growth on 'A' products**, and a **25% reduction in C-items**[cite: 34, 35, 36].
+* **Goal**: Optimize procurement and release working capital by identifying "Catalog Bloat" and "Supply Risk" in vendor portfolios.
+* **Methodology**: Engineered **22 weighted metrics** (e.g., Portfolio Purity, Revenue Density, Buffer Reliability) and used **Principal Component Analysis (PCA)** to condense multi-dimensional performance into a scannable **2D Strategic Map**.
+* **Impact**: Enabled a **15% reduction in purchasing costs**, a **23% sales growth on 'A' products**, and a **25% reduction in C-items**.
 * 🔗 [**View Technical Notebooks & SVI Dashboard**](./03_Strategic_Vendor_Intelligence_PCA/)
 
 ### 📈 **Hybrid E-Commerce Sales Forecast**
 **Strategic Forecasting Engine | Prophet + XGBoost Ensemble**
-* [cite_start]**Goal**: Optimize e-commerce inventory and labor efficiency using **Time-Series Analysis**[cite: 45, 46].
-* [cite_start]**Methodology**: A dual-model approach blending **Prophet** (Strategic Base for seasonality) with **XGBoost** (Tactical Anchor for recent performance)[cite: 58, 59, 60].
+* **Goal**: Optimize e-commerce inventory and labor efficiency using **Time-Series Analysis**.
+* **Methodology**: A dual-model approach blending **Prophet** (Strategic Base for seasonality) with **XGBoost** (Tactical Anchor for recent performance).
 * **Tech Stack**: Python, Time Series, Log-Transformation, Rolling Statistics.
-* [cite_start]**Impact**: High-precision forecasting to mitigate revenue volatility and warehouse over-staffing (achieved **~12% improvement in labor efficiency**)[cite: 46].
+* **Impact**: High-precision forecasting to mitigate revenue volatility and warehouse over-staffing (achieved **~12% improvement in labor efficiency**).
 * 🔗 [**View Technical Notebooks & Results**](./02_Hybrid_ML_Sales_Forecast/)
 
 ### 👥 **Strategic HR: Employee Retention**
@@ -47,10 +47,10 @@ Welcome to my professional ML portfolio. This repository showcases high-impact *
 
 This portfolio is organized into modular directories for easy auditing of code quality and data integrity:
 
-* **[00_Standards](./00_Standards/):** Production-grade code guidelines.
-* **[01_HR_Analytics](./01_HR_Analytics/):** Classification and People Science.
-* **[02_Sales_Forecast](./02_Hybrid_ML_Sales_Forecast/):** Advanced Time-Series and Regression.
-* **[03_Strategic_Vendor_Intelligence_PCA](./03_Strategic_Vendor_Intelligence_PCA/):** Unsupervised Learning & Dimensionality Reduction.
+* **[00_Standards](./00_Standards/)**: Production-grade code guidelines.
+* **[01_HR_Analytics](./01_HR_Analytics/)**: Classification and People Science.
+* **[02_Sales_Forecast](./02_Hybrid_ML_Sales_Forecast/)**: Advanced Time-Series and Regression.
+* **[03_Strategic_Vendor_Intelligence_PCA](./03_Strategic_Vendor_Intelligence_PCA/)**: Unsupervised Learning & Dimensionality Reduction.
 
 ---
 
