@@ -30,7 +30,7 @@ Welcome to my professional ML portfolio. This repository showcases high-impact *
 * **Methodology**: **Supervised Learning** classification to predict high-risk attrition candidates.
 * **Tech Stack**: Scikit-Learn, Exploratory Data Analysis (EDA), Feature Importance.
 * **Impact**: Data-driven insights to reduce turnover costs and stabilize workforce talent.
-* 🔗 [**View Project Details**](./01_HR_Analytics/)
+* 🔗 [**View Project Details**](./01_Strategic-HR-Retention/)
 
 ---
 
