@@ -56,5 +56,10 @@ Directly derived from the model's highest-weighted predictors:
 This project moves HR from a **cost center (replacing talent)** to a **strategic asset (preserving talent)**. By focusing on the tipping points where employees decide to exit, we provide the evidence-based justification needed to reallocate budgets toward high-impact retention.
 
 ---
+
 **Author:** Sebastian Thurm  
-**Role:** Strategic Data Scientist & AI Architect
+**Role:** Head of Data, Machine Learning and AI
+
+
+
+
