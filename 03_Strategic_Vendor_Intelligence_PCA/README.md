@@ -5,9 +5,9 @@
 
 ## 📊 Executive Strategic Summary
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/[Basti-T]/[ML_Portfolio]/main/03_Strategic_Vendor_Intelligence_PCA/presentations/Summary.png" alt="SVI Summary" width="900">
-</div>
+[![(PDF) Strategic Vendor Intelligence](./03_Strategic_Vendor_Intelligence_PCA/presentations/Summary.png)](./03_Strategic_Vendor_Intelligence_PCA/presentations/Strategic_Vendor_Intelligence_SVI.pdf)
+
+*Click the image above to view the [Full Strategy PDF](./03_Strategic_Vendor_Intelligence_PCA/presentations/Strategic_Vendor_Intelligence_SVI.pdf)*
 
 
 ---
