@@ -7,7 +7,7 @@
 
 [![(PDF) Strategic Vendor Intelligence](./03_Strategic_Vendor_Intelligence_PCA/presentations/Summary.png)](./03_Strategic_Vendor_Intelligence_PCA/presentations/Strategic_Vendor_Intelligence_SVI.pdf)
 
-*Click the image above to view the [Full Strategy PDF](./03_Strategic_Vendor_Intelligence_PCA/presentations/Strategic_Vendor_Intelligence_SVI.pdf)*
+*Click image to view the [Full Strategy PDF](./03_Strategic_Vendor_Intelligence_PCA/presentations/Strategic_Vendor_Intelligence_SVI.pdf)*
 
 
 ---
