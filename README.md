@@ -1,7 +1,7 @@
 # 🤖 Sebastian Thurm: Strategic AI & Machine Learning Portfolio
 ### **High-Impact ML Solutions | Supply Chain Architecture | Business Value Engineering**
 
-**Architect:** [Sebastian Thurm](https://www.linkedin.com/in/sebastian_thurm_ai)  
+**Architect:** [Sebastian Thurm](https://www.linkedin.com/in/sebastian-thurm-ai)  
 **Philosophy:** Converting raw data into **Prescriptive Profit Engines** that drive measurable ROI.
 
 Welcome to my professional portfolio. This repository showcases end-to-end Machine Learning systems designed to solve high-stakes business problems. My approach bridges the gap between **Executive Strategy** (Working Capital & Revenue Growth) and **Production-Grade Engineering** (Scalable MLOps & Clean Code).
@@ -88,4 +88,4 @@ Every project in this portfolio adheres to my **Business-First Engineering Manif
 ---
 
 ### 📫 Connect & Decode Data:
-[**LinkedIn**](https://www.linkedin.com/in/sebastian_thurm_ai) | [**YouTube: AI, ML & Data Decoded**](https://www.youtube.com/@ai_ml_and_data_decoded)
+[**LinkedIn**](https://www.linkedin.com/in/sebastian-thurm-ai) | [**YouTube: AI, ML & Data Decoded**](https://www.youtube.com/@ai_ml_and_data_decoded)
