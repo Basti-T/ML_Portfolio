@@ -69,7 +69,7 @@ Every project in this portfolio adheres to my **Business-First Engineering Manif
 
 ---
 
-## 🛠️ Tech Stack & SEO Keywords
+## 🛠️ Tech Stack
 * **Languages**: Python (Advanced Modeling), SQL (ETL & Analysis).
 * **Algorithms**: `XGBoost`, `Random Forest`, `Prophet`, `K-Means`, `PCA`, `SMOTETomek` (Imbalance Handling).
 * **Frameworks**: `Scikit-Learn`, `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`.
