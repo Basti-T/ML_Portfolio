@@ -5,20 +5,16 @@
 
 ## 📊 Executive Strategic Summary
 
-<p align="center">
-  <object data="./presentations/Predicitve_Classifier.pdf" type="application/pdf" width="100%" height="800px">
-    <p>Your browser does not support PDFs. 
-      <a href="./presentations/Predicitve_Classifier.pdf">Click here to view the Full Strategy PDF.</a>
-    </p>
-  </object>
-</p>
+[![New Item Predictive Classifier Summary](./presentations/New_Item_Predictive_Classifier.jpg)](./presentations/Predicitve_Classifier.pdf)
+
+*Click the image above to view the [Full Strategy PDF](./presentations/Predicitve_Classifier.pdf)*
 
 ---
 
 ## 📌 Strategic Overview
-In high-growth e-commerce, the initial "First-Buy" of a new SKU is traditionally a high-risk gamble. Standard ERP systems are **reactive**—classifying products only after 90 days of sales history. This results in **"C-Item" Bloat**, where 55% of new onboarded items typically become dead stock, trapping vital working capital.
+In high-growth e-commerce environments, the initial purchase of a new SKU is traditionally a high-risk gamble. Standard ERP systems are **reactive**—classifying products into ABC segments only after 90 days of sales history. This results in **"C-Item" Bloat**, where 55% of new onboarded items typically become dead stock, trapping vital working capital.
 
-The **PCO (Predictive Catalog Onboarding)** engine transitions procurement from reactive reporting to **Prescriptive Machine Learning**. By analyzing 22 "Pre-Purchase" features, this system identifies an item’s potential *before* the first Euro is invested.
+The **PCO (Predictive Catalog Onboarding)** engine transitions procurement from reactive reporting to **Prescriptive Machine Learning**. By analyzing "Pre-Purchase" features, this system identifies an item’s potential *before* the first Euro is invested.
 
 **Key Achievement:** Proven at a **$3M ARR startup scale**, this implementation shifted the new-item hit rate from **10% to 25%** and slashed dead-stock onboarding by **45%**, directly accelerating cash-flow velocity.
 
@@ -34,7 +30,7 @@ The system utilizes a "High-Integrity" **Supervised Learning Pipeline** specific
 ### Technical Highlights:
 * **Cold-Start Logic:** Achieves **72% Accuracy** on items with zero sales history—validated via **5-Fold Cross-Validation** (Mean: 0.7155).
 * **Probabilistic Risk Scoring:** Provides buyers with an **AI Confidence %**, triggering "Stability Alerts" for items that sit on the border between categories.
-* **Volume Regression:** Integrated **XGBoost Poisson Regressor** to calculate the optimal 30-day "Initial Buy" quantity, preventing over-indexing on unconfirmed trends.
+* **Volume Regression:** Integrated **XGBoost Poisson Regressor** to calculate the optimal 30-day "Initial Buy" quantity, preventing over-stocking on unconfirmed trends.
 
 ---
 
@@ -42,8 +38,8 @@ The system utilizes a "High-Integrity" **Supervised Learning Pipeline** specific
 To maintain data integrity and professional standards, this project is organized into functional layers:
 
 * **[Main Notebooks](notebooks/)**: Contains the `Predict_ABC_and_Sales.ipynb` engine and the interactive **Buyer Dashboard**.
-* **[Visuals & Presentations](presentations/)**: Includes the **PCO Strategic 1-Pager**, ABC distribution charts, and UI screenshots.
-* **[Data Schemas](data/)**: Format specifications for `readymlproducts.csv` and `readymlvendor.csv` (compatible with standard ERP exports).
+* **[Visuals & Presentations](presentations/)**: Includes the **PCO Strategic 1-Pager**, ABC distribution charts, and the model classification report.
+* **[Data Schemas](data/)**: Format specifications for `readymlproducts.csv` and `readymlvendor.csv`.
 
 ---
 
