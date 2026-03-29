@@ -2,14 +2,13 @@
 ### *From Reactive Discounting to Prescriptive Profit: A Hardened AWS-Native Pricing Engine*
 
 ---
-
-## 📊 Executive Strategic Summary
-
-> ### 📂 [Full Strategy & Architecture PDF](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)
 >
 > ## 📊 Executive Strategic Summary
+>
+> [![Strategic Summary Preview](./presentations/dynamicpricing_preview.jpg)](./presentations/dynamicpricing.pdf)
 
-> ### 📂 [View Strategic Project Roadmap (PDF)](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)
+*Click the image above to view the [Full Strategy PDF](./presentations/dynamicpricing.pdf)*
+
 
 *Click the link above to view the complete strategic breakdown and AWS infrastructure diagrams.*
 
