@@ -1,10 +1,11 @@
+
 # 🤖 Sebastian Thurm: Strategic AI & Machine Learning Portfolio
-### **High-Impact ML Solutions | Supply Chain Architecture | Business Value Engineering**
+### **High-Impact ML Systems | Enterprise MLOps Architecture | Business Value Engineering**
 
 **Architect:** [Sebastian Thurm](https://www.linkedin.com/in/sebastian-thurm-ai)  
 **Philosophy:** Converting raw data into **Prescriptive Profit Engines** that drive measurable ROI.
 
-Welcome to my professional portfolio. This repository showcases end-to-end Machine Learning systems designed to solve high-stakes business problems. My approach bridges the gap between **Executive Strategy** (Working Capital & Revenue Growth) and **Production-Grade Engineering** (Scalable MLOps & Clean Code).
+Welcome to my professional portfolio. This repository showcases end-to-end Machine Learning systems designed to solve high-stakes business problems. My approach bridges the gap between **Executive Strategy** (Working Capital & Revenue Growth) and **Production-Grade Engineering** (Scalable MLOps & Hardened Cloud Infrastructure).
 
 ---
 
@@ -13,25 +14,35 @@ Every project in this portfolio adheres to my **Business-First Engineering Manif
 
 | Commandment | Technical Implementation | Business Value |
 | :--- | :--- | :--- |
+| **Infrastructure-as-Code** | AWS CloudFormation & VPC Isolation. | Ensures 100% reproducibility and enterprise-grade security. |
 | **The Wall of Silence** | Strict `train_test_split` before ANY analysis. | Prevents "Data Leakage" and over-optimistic ROI projections. |
+| **Feature Registry** | SageMaker Feature Store implementation. | Eliminates Training-Serving skew for real-time inference. |
 | **Stability Anchors** | Mandatory **Stratified K-Fold Cross-Validation**. | Ensures the model generalizes to new markets/vendors. |
-| **Missingness as Signal** | Capturing null values as boolean features. | Turns "messy data" into predictive indicators of vendor reliability. |
-| **Pipeline Architecture** | Unified `ColumnTransformer` & `Pipeline` objects. | Rapid deployment and 100% reproducibility in production. |
-| **Validation Layer** | Interactive `ipywidgets` Stakeholder Dashboards. | Empowers non-technical buyers to use AI for daily decisions. |
+| **Validation Layer** | Interactive Dashboards & Serverless Endpoints. | Empowers stakeholders to use AI for daily tactical decisions. |
 
 ---
 
 ## 📈 Featured Strategic Solutions
 
-### 🚀 **Predictive Catalog Onboarding (PCO) & ABC Classifier**
-**Supervised Learning | Ensemble Models (XGBoost + Random Forest)**
-* **The Problem**: New item "First-Buys" are traditionally high-risk gambles; historically, 55% of new onboarded items become "C-Item" dead stock within 90 days.
-* **The Solution**: A "Cold-Start" engine that classifies items *before* the first order using 22 pre-purchase features (Price-Density, Vendor-Success-Rate, Margin-Pct).
+### 🚀 **Enterprise MLOps: Dynamic Pricing Infrastructure**
+**Cloud Architecture | AWS SageMaker | Infrastructure-as-Code (IaC)**
+* **The Problem**: Traditional ERPs are reactive, categorizing products only after 90 days of sales. This leads to warehouse congestion and "panic discounting."
+* **The Solution**: A hardened **AWS-Native MLOps Skeleton** that synchronizes clickstream "Friction Metrics" (CtD/BtD ratios) with automated price elasticity triggers.
 * **🏆 Strategic Outcomes**:
-    * **+150% Increase** in A-Item "Hit Rate" precision (from 10% to 25%).
-    * **-45% Reduction** in dead-stock "C-Item" onboarding.
-    * **25% Total Reduction** in underperforming inventory volume.
-    * **23% Revenue Growth** in 'A' categories through optimized availability.
+    * **~90% Reduction** in fixed infrastructure costs via **Serverless Inference**.
+    * **Automated Margin Protection**: Real-time identification of "C-Item" (dead-stock) risks for proactive liquidation.
+    * **Enterprise Security**: Deployed in a hardened VPC with S3 Gateway Endpoints to protect sensitive commercial data.
+* 🔗 [**View AWS Infrastructure & Strategy**](./05_Enterprise_MLOps_Dynamic_Pricing_Infrastructure/)
+
+---
+
+### 📦 **Predictive Catalog Onboarding (PCO) & ABC Classifier**
+**Supervised Learning | Ensemble Models (XGBoost + Random Forest)**
+* **The Problem**: New item "First-Buys" are traditionally high-risk gambles; 55% of new items typically become dead stock.
+* **The Solution**: A "Cold-Start" engine that classifies items *before* the first order using 22 pre-purchase features.
+* **🏆 Strategic Outcomes**:
+    * **+150% Increase** in A-Item "Hit Rate" precision.
+    * **-45% Reduction** in dead-stock onboarding.
 * 🔗 [**View Technical Notebook & PCO Dashboard**](./04_Predictive_Classifier_New_Items_Ecommerce/)
 
 ---
@@ -42,45 +53,33 @@ Every project in this portfolio adheres to my **Business-First Engineering Manif
 * **The Solution**: A multi-dimensional engine archetyping vendors based on **Portfolio Purity**, **Revenue Density**, and **Buffer Reliability**.
 * **🏆 Strategic Outcomes**:
     * **15% Reduction** in total purchasing costs through strategic consolidation.
-    * **25% Reduction** in catalog bloat, releasing significant working capital.
-    * **Decision Clarity**: Converted raw ERP exports into a 2D Strategic Map for executive-level negotiation.
+    * **25% Reduction** in catalog bloat, releasing vital working capital.
 * 🔗 [**View Strategic Map & Cluster Logic**](./03_Strategic_Vendor_Intelligence_PCA/)
 
 ---
 
 ### 📊 **Hybrid E-Commerce Sales Forecast**
 **Ensemble Time-Series Forecasting | Prophet + XGBoost**
-* **The Problem**: Generic forecasting misses tactical spikes, leading to warehouse over-staffing or costly stockouts.
+* **The Problem**: Generic forecasting misses tactical spikes, leading to warehouse labor inefficiency.
 * **The Solution**: A dual-model approach blending **Prophet** (strategic seasonality) with **XGBoost** (tactical residuals).
-* **🏆 Strategic Outcomes**:
-    * **~12% Improvement** in warehouse labor efficiency through demand-aligned staffing.
-    * **Stock Depth Optimization**: Mitigated revenue volatility by aligning labor and stock depth to high-precision daily forecasts.
+* **🏆 Strategic Outcomes**: **~12% Improvement** in warehouse labor efficiency through demand-aligned staffing.
 * 🔗 [**View Forecasting Engine & Results**](./02_Hybrid_ML_Sales_Forecast/)
 
 ---
 
-### 👥 **Strategic HR: Employee Retention**
-**Supervised Classification | People Analytics**
-* **The Problem**: High turnover costs and "Hidden Attrition" disrupting organizational stability.
-* **The Solution**: Predicting high-risk candidates using behavioral features to trigger preemptive retention actions.
-* **🏆 Strategic Outcomes**: 
-    * Identified **Top 5 Drivers** of turnover, allowing HR to stabilize high-value talent pools and reduce replacement costs.
-* 🔗 [**View Attrition Prediction Model**](./01_Strategic-HR-Retention/)
-
----
-
 ## 🛠️ Tech Stack
-* **Languages**: Python (Advanced Modeling), SQL (ETL & Analysis).
-* **Algorithms**: `XGBoost`, `Random Forest`, `Prophet`, `K-Means`, `PCA`, `SMOTETomek` (Imbalance Handling).
+* **Cloud & MLOps**: AWS (SageMaker, CloudFormation, Feature Store, Serverless Inference, VPC, IAM).
+* **Languages**: Python (Advanced Modeling), SQL (ETL & Analysis), YAML (IaC).
+* **Algorithms**: `XGBoost`, `Random Forest`, `Prophet`, `K-Means`, `PCA`, `SMOTETomek`.
 * **Frameworks**: `Scikit-Learn`, `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`.
-* **Strategic AI Concepts**: **Inventory Optimization**, **Working Capital Management**, **Prescriptive Analytics**, **MLOps Pipelines**, **Explainable AI (XAI)**, **Supply Chain ROI**.
+* **Strategic Concepts**: **Inventory Velocity**, **Working Capital Optimization**, **Price Elasticity**, **Margin Protection**, **Explainable AI (XAI)**.
 
 ---
 
 ## 📂 Portfolio Roadmap
 
-* **[00_Standards](./00_Standards/)**: The "ML Gold Standard" Template. PEP8 compliance, Pipeline architecture, and Stability protocols.
-* **[04_PCO Classifier](./04_Predictive_Classifier_New_Items_Ecommerce/)**: Classification for New Items (The Cold-Start Solution).
+* **[05_MLOps_Pricing](./05_Enterprise_MLOps_Dynamic_Pricing_Infrastructure/)**: AWS Infrastructure & Dynamic Pricing Pipeline.
+* **[04_PCO_Classifier](./04_Predictive_Classifier_New_Items_Ecommerce/)**: Classification for New Items (The Cold-Start Solution).
 * **[03_Vendor_Intelligence](./03_Strategic_Vendor_Intelligence_PCA/)**: Unsupervised Archetyping & Dimensionality Reduction.
 * **[02_Sales_Forecast](./02_Hybrid_ML_Sales_Forecast/)**: Tactical Time-Series & Labor Optimization.
 * **[01_HR_Analytics](./01_Strategic-HR-Retention/)**: Risk Modeling & People Science.
