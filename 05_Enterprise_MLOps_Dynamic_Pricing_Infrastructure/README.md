@@ -6,6 +6,11 @@
 ## 📊 Executive Strategic Summary
 
 > ### 📂 [Full Strategy & Architecture PDF](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)
+>
+> ## 📊 Executive Strategic Summary
+
+> ### 📂 [View Strategic Project Roadmap (PDF)](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)
+
 *Click the link above to view the complete strategic breakdown and AWS infrastructure diagrams.*
 
 ---
