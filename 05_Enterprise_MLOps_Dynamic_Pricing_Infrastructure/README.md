@@ -5,9 +5,10 @@
 
 ## 📊 Executive Strategic Summary
 
-[![Dynamic Pricing Infrastructure Summary](./presentations/architecture-summary.jpg)](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)
+> ### 📂 [Full Strategy & Architecture PDF](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)
+*Click the link above to view the complete strategic breakdown and AWS infrastructure diagrams.*
 
-*Click the image above to view the [Full Strategy PDF](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)*
+---
 
 ---
 
