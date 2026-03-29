@@ -5,7 +5,7 @@
 
 ## 📊 Executive Strategic Summary
 
-[![Dynamic Pricing Infrastructure Summary](./presentations/infrastructure-composer-template.yaml.1.jpg)](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)
+[![Dynamic Pricing Infrastructure Summary](./presentations/architecture-summary.jpg)](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)
 
 *Click the image above to view the [Full Strategy PDF](./presentations/Enterprise%20MLOps%20&%20Dynamic%20Pricing%20Infrastructure.pdf)*
 
