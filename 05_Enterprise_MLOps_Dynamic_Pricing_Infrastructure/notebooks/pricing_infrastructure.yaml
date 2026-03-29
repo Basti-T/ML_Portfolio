@@ -1,0 +1,118 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Enterprise MLOps: VPC isolation, Scoped IAM, and Dynamic Resource Naming.'
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: pricing-project
+    Description: 'The name of the project for resource prefixing.'
+  RandomSuffix:
+    Type: String
+    Default: 'v1'
+    Description: 'Change this (e.g., v2, v3) if you hit a naming conflict error.'
+
+Resources:
+  # --- 1. NETWORK (VPC) ---
+  PricingVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-vpc"
+
+  PrivateSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref PricingVPC
+      CidrBlock: 10.0.1.0/24
+      AvailabilityZone: !Select [ 0, !GetAZs '' ]
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-private-sn"
+
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref PricingVPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-rt"
+
+  SubnetRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet
+      RouteTableId: !Ref PrivateRouteTable
+
+  # --- 2. STORAGE (S3) ---
+  DataBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${ProjectName}-data-${AWS::AccountId}-${RandomSuffix}"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  # --- 3. SECURITY (IAM) ---
+  SageMakerExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17' 
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: [sagemaker.amazonaws.com]
+            Action: ['sts:AssumeRole']
+      # Added Managed Policy for Feature Store Access
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSageMakerFeatureStoreAccess
+      Policies:
+        - PolicyName: !Sub "${ProjectName}-s3-access"
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "s3:GetObject"
+                  - "s3:PutObject"
+                  - "s3:ListBucket"
+                  # FIX: Added ACL permissions required for Offline Feature Store
+                  - "s3:GetBucketAcl"
+                  - "s3:PutObjectAcl"
+                Resource: 
+                  - !GetAtt DataBucket.Arn
+                  - !Sub "${DataBucket.Arn}/*"
+        - PolicyName: "SageMakerExecution"
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "sagemaker:*"
+                  - "logs:CreateLogGroup"
+                  - "logs:CreateLogStream"
+                  - "logs:PutLogEvents"
+                Resource: "*"
+
+  # --- 4. CONNECTIVITY (S3 Gateway) ---
+  S3GatewayEndpoint:
+    Type: AWS::EC2::VPCEndpoint
+    Properties:
+      ServiceName: !Sub "com.amazonaws.${AWS::Region}.s3"
+      VpcId: !Ref PricingVPC
+      RouteTableIds: [!Ref PrivateRouteTable]
+      VpcEndpointType: Gateway
+
+Outputs:
+  FinalBucketName:
+    Description: "The name of your S3 Data Lake"
+    Value: !Ref DataBucket
+  SageMakerRoleArn:
+    Description: "The ARN of the SageMaker Execution Role"
+    Value: !GetAtt SageMakerExecutionRole.Arn
