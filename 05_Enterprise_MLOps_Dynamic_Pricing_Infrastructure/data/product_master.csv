@@ -1,0 +1,101 @@
+sku_id,product_name,category,base_cost,current_msrp,inventory_level
+ELEC-1000,Cameras Device 0,Cameras,762.05,1598.26,208
+ELEC-1001,Smart Home Device 1,Smart Home,150.13,280.94,350
+ELEC-1002,Peripherals Device 2,Peripherals,696.96,1422.68,171
+ELEC-1003,Peripherals Device 3,Peripherals,45.85,101.21,433
+ELEC-1004,Computers Device 4,Computers,170.01,319.76,479
+ELEC-1005,Computers Device 5,Computers,434.06,856.47,68
+ELEC-1006,Peripherals Device 6,Peripherals,501.13,934.85,495
+ELEC-1007,Cameras Device 7,Cameras,312.1,618.76,194
+ELEC-1008,Peripherals Device 8,Peripherals,324.5,718.42,150
+ELEC-1009,Smart Home Device 9,Smart Home,497.81,934.07,186
+ELEC-1010,Computers Device 10,Computers,760.64,1677.5,261
+ELEC-1011,Computers Device 11,Computers,264.55,489.7,359
+ELEC-1012,Cameras Device 12,Cameras,368.92,685.98,283
+ELEC-1013,Peripherals Device 13,Peripherals,730.18,1393.14,379
+ELEC-1014,Cameras Device 14,Cameras,270.02,542.21,125
+ELEC-1015,Cameras Device 15,Cameras,172.34,380.4,237
+ELEC-1016,Cameras Device 16,Cameras,753.41,1636.02,289
+ELEC-1017,Cameras Device 17,Cameras,64.83,125.27,227
+ELEC-1018,Smart Home Device 18,Smart Home,238.94,511.51,429
+ELEC-1019,Audio Device 19,Audio,246.32,496.88,60
+ELEC-1020,Smart Home Device 20,Smart Home,647.69,1193.8,346
+ELEC-1021,Audio Device 21,Audio,624.63,1178.26,491
+ELEC-1022,Peripherals Device 22,Peripherals,183.11,382.38,438
+ELEC-1023,Audio Device 23,Audio,496.59,1085.75,60
+ELEC-1024,Cameras Device 24,Cameras,694.59,1424.3,437
+ELEC-1025,Audio Device 25,Audio,78.94,152.13,235
+ELEC-1026,Smart Home Device 26,Smart Home,591.8,1217.08,494
+ELEC-1027,Peripherals Device 27,Peripherals,393.61,731.55,481
+ELEC-1028,Peripherals Device 28,Peripherals,615.8,1246.89,274
+ELEC-1029,Peripherals Device 29,Peripherals,432.5,852.65,61
+ELEC-1030,Cameras Device 30,Cameras,113.08,206.78,250
+ELEC-1031,Audio Device 31,Audio,272.05,545.04,241
+ELEC-1032,Smart Home Device 32,Smart Home,221.96,436.09,190
+ELEC-1033,Smart Home Device 33,Smart Home,206.17,380.18,206
+ELEC-1034,Peripherals Device 34,Peripherals,154.14,337.27,64
+ELEC-1035,Audio Device 35,Audio,111.23,220.54,127
+ELEC-1036,Cameras Device 36,Cameras,350.71,759.66,147
+ELEC-1037,Computers Device 37,Computers,124.01,241.09,209
+ELEC-1038,Audio Device 38,Audio,239.54,493.67,140
+ELEC-1039,Cameras Device 39,Cameras,301.48,580.3,217
+ELEC-1040,Peripherals Device 40,Peripherals,351.41,665.81,326
+ELEC-1041,Computers Device 41,Computers,289.96,636.29,393
+ELEC-1042,Audio Device 42,Audio,340.95,627.32,461
+ELEC-1043,Cameras Device 43,Cameras,220.09,458.18,406
+ELEC-1044,Audio Device 44,Audio,144.03,319.9,206
+ELEC-1045,Audio Device 45,Audio,781.99,1536.65,362
+ELEC-1046,Smart Home Device 46,Smart Home,295.7,607.74,145
+ELEC-1047,Computers Device 47,Computers,438.82,868.57,217
+ELEC-1048,Cameras Device 48,Cameras,92.26,179.83,420
+ELEC-1049,Smart Home Device 49,Smart Home,516.88,1062.12,414
+ELEC-1050,Audio Device 50,Audio,146.05,292.58,483
+ELEC-1051,Smart Home Device 51,Smart Home,690.94,1335.39,439
+ELEC-1052,Peripherals Device 52,Peripherals,577.59,1231.39,167
+ELEC-1053,Cameras Device 53,Cameras,754.2,1478.13,58
+ELEC-1054,Computers Device 54,Computers,675.04,1399.24,460
+ELEC-1055,Audio Device 55,Audio,190.99,385.16,317
+ELEC-1056,Peripherals Device 56,Peripherals,205.98,386.82,131
+ELEC-1057,Audio Device 57,Audio,427.81,816.56,404
+ELEC-1058,Cameras Device 58,Cameras,459.89,995.99,28
+ELEC-1059,Audio Device 59,Audio,298.89,626.08,150
+ELEC-1060,Cameras Device 60,Cameras,713.06,1510.67,427
+ELEC-1061,Cameras Device 61,Cameras,94.79,177.56,441
+ELEC-1062,Cameras Device 62,Cameras,477.13,930.49,492
+ELEC-1063,Peripherals Device 63,Peripherals,779.72,1494.84,385
+ELEC-1064,Computers Device 64,Computers,403.92,799.6,464
+ELEC-1065,Audio Device 65,Audio,165.46,301.83,417
+ELEC-1066,Smart Home Device 66,Smart Home,167.69,326.66,411
+ELEC-1067,Peripherals Device 67,Peripherals,536.36,1087.58,479
+ELEC-1068,Peripherals Device 68,Peripherals,313.14,598.19,257
+ELEC-1069,Smart Home Device 69,Smart Home,404.79,881.15,46
+ELEC-1070,Computers Device 70,Computers,299.56,617.03,386
+ELEC-1071,Audio Device 71,Audio,180.34,377.47,166
+ELEC-1072,Cameras Device 72,Cameras,48.72,100.37,36
+ELEC-1073,Cameras Device 73,Cameras,754.15,1658.91,392
+ELEC-1074,Peripherals Device 74,Peripherals,605.74,1332.2,368
+ELEC-1075,Audio Device 75,Audio,455.63,924.63,207
+ELEC-1076,Audio Device 76,Audio,88.02,169.45,435
+ELEC-1077,Audio Device 77,Audio,274.03,514.08,300
+ELEC-1078,Computers Device 78,Computers,750.84,1562.96,379
+ELEC-1079,Computers Device 79,Computers,503.56,1116.54,469
+ELEC-1080,Peripherals Device 80,Peripherals,257.37,497.11,123
+ELEC-1081,Audio Device 81,Audio,135.2,282.19,58
+ELEC-1082,Smart Home Device 82,Smart Home,258.31,508.47,325
+ELEC-1083,Audio Device 83,Audio,500.87,924.38,410
+ELEC-1084,Audio Device 84,Audio,513.48,967.78,283
+ELEC-1085,Cameras Device 85,Cameras,712.7,1302.35,373
+ELEC-1086,Computers Device 86,Computers,367.63,761.45,70
+ELEC-1087,Audio Device 87,Audio,149.38,330.63,169
+ELEC-1088,Computers Device 88,Computers,692.51,1319.13,189
+ELEC-1089,Peripherals Device 89,Peripherals,127.84,256.82,72
+ELEC-1090,Cameras Device 90,Cameras,196.18,402.25,215
+ELEC-1091,Smart Home Device 91,Smart Home,179.67,353.09,374
+ELEC-1092,Cameras Device 92,Cameras,132.21,291.83,125
+ELEC-1093,Peripherals Device 93,Peripherals,642.29,1228.29,111
+ELEC-1094,Computers Device 94,Computers,90.41,165.15,136
+ELEC-1095,Audio Device 95,Audio,560.14,1029.34,141
+ELEC-1096,Audio Device 96,Audio,370.61,704.56,137
+ELEC-1097,Audio Device 97,Audio,538.35,1031.31,291
+ELEC-1098,Smart Home Device 98,Smart Home,598.18,1209.51,297
+ELEC-1099,Smart Home Device 99,Smart Home,353.09,672.27,163
