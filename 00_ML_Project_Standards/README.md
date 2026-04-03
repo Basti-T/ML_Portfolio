@@ -1,10 +1,10 @@
 # 🏆 The ML Gold Standard: Business-First Engineering Manifesto
 
-**Version 2.1 — Effective Date: March 8, 2026**
+**Version 3.0 — Effective Date: March 8, 2026**
 
-This repository defines my professional standards for Machine Learning. I prioritize **Data Integrity**, **Scientific Rigor**, and **Business Impact** over model complexity.
+This repository defines my professional standards for Machine Learning Engineering. I prioritize **Data Integrity**, **Scientific Rigor**, and **Business Impact** over model complexity. 
 
-> **Core Philosophy:** I solve real-world business problems by applying rigorous engineering standards to messy data. I deliver actionable results through a "simple-first" architecture that ensures reliability and clear ROI.
+> **Core Philosophy:** I solve real-world business problems by applying rigorous engineering standards to messy data. I deliver "Production-Ready" assets through a standardized architecture that ensures reliability, transparency, and a clear path from a Google Colab sandbox to an AWS production factory.
 
 ---
 
@@ -15,72 +15,74 @@ This repository defines my professional standards for Machine Learning. I priori
 
 ---
 
-## 🚀 [Download the ML Standard Template (.ipynb)](./notebooks/ML_Standard_Template.ipynb)
-*Use this pre-configured environment to jumpstart high-integrity ML pipelines with built-in validation layers and "The 10 Commandments" pre-coded.*
+## 🛠️ The Dual-Engine Mother Templates
+*Use these pre-configured environments to jumpstart high-integrity ML pipelines with built-in validation layers and "The 11 Commandments" pre-coded.*
+
+### 📈 [1. The Regression Engine (Continuous Prediction)](./notebooks/ML_Standard_Template_Regression.ipynb)
+* **Focus:** Pricing, Forecasting, and Value Quantification.
+* **Logic:** XGBoost excellence, Residual Analysis, and Variance Stability.
+
+### 🎯 [2. The Classification Engine (Decision Logic)](./notebooks/ML_Standard_Template_Classification.ipynb)
+* **Focus:** Churn, Fraud, and Risk Categorization.
+* **Logic:** Random Forest/XGBoost, Probability Calibration, and Performance Slicing.
 
 ---
 
-## 📂 I. Simplified Project Structure
-*Designed for clarity and high-speed iteration in Google Colab:*
+## 📂 I. Standardized Project Structure
+*Designed for high-speed iteration in Google Colab and zero-friction handover to AWS Pipelines:*
 
-* **`data/`**: Raw datasets (read-only).
-* **`visuals/`**: Exported plots, GIFs of widgets, and model performance charts.
-* **`notebooks/`**: The engine. Contains the end-to-end pipeline from EDA to Interactive UI.
-* **`presentations/`**: The 5-slide Executive PDF (if not embedded in the README).
-* **`README.md`**: This Manifesto + The Executive Summary for the specific project.
+* **`data/`**: Raw datasets (Read-only source of truth).
+* **`visuals/`**: Exported Residual Plots, Feature Importances, and Segment Audits.
+* **`notebooks/`**: The engine. Contains the Regression and Classification Mother Templates.
+* **`presentations/`**: The Executive PDF Manifesto and Strategic Visuals.
+* **`Presentation/`**: **The Deployment Package (The Handover Asset)**
+    * 📦 `[model_name]_v3_[date].pkl`: The serialized Pipeline (Preprocessing + Model).
+    * 📄 `requirements.txt`: The Selective Environment Lock for AWS.
 
 ---
 
-## 🛠 II. The 10 Commandments of High-Integrity Pipelines
+## 🛠 II. The 11 Commandments of High-Integrity Pipelines
+
+### 0.5 The Sanity Gate (Pre-Flight Check)
+* **The Law**: Automatically kill "noise" before training. Remove zero-variance features, high-cardinality IDs, and sparse columns to prevent the model from learning "mirages."
 
 ### 1. The "Wall of Silence" (Data Splitting)
-* **The Law**: Data must be split before any human or machine "looks" at it.
-* **Small Data (<10k)**: Mandatory `StratifiedKFold` to maintain class ratios.
-* **Time-Series**: Use `TimeSeriesSplit`; never shuffle chronologically dependent data.
+* **The Law**: Data must be split before any human or machine "looks" at it. Use Stratified Splitting to ensure real-world performance matches laboratory results.
 
-### 2. Signal-First Missing Value Handling
-* **The Law**: Never delete data unless it is a duplicate. Missingness is a business signal.
-* **Strategy**: Instead of dropping rows, use an `is_missing` boolean flag to capture the pattern of absence. Use **Iterative Imputation** or **Median/Mode** within the pipeline to keep the data whole.
+### 2. Signal-First Feature Engineering
+* **The Law**: Missingness is a business signal. Never delete data; use boolean flags to capture patterns of absence.
 
-### 3. The Transformation Engine (Leakage Prevention)
-* **The Law**: Use `sklearn.pipeline.Pipeline` to automate scaling and modeling.
-* **Techniques**:
-    * **Standardization**: For algorithms sensitive to magnitude (Linear Regression, SVM, KNN).
-    * **Normalization**: For data with specific bounds or non-Gaussian distributions.
-* **Constraint**: Calculate parameters (mean, std) **only** on the Training set.
+### 3. The Transformation Engine (Pipeline Architecture)
+* **The Law**: Bundle all Scaling, Encoding, and Imputation into a `scikit-learn` Pipeline. The resulting `.pkl` is a portable "black box" for AWS.
 
 ### 4. The Complexity Threshold (Baseline vs. SOTA)
-* **The Law**: Complex models (XGBoost, CatBoost) are only used if they provide a **>5-10% improvement** over a simple Baseline.
-* **Reasoning**: If a simple Decision Tree gets you 90% of the way there, the extra 10% from an "ensemble" model must justify its lack of interpretability and higher compute cost.
+* **The Law**: Advanced models (XGBoost) must provide a **>10% improvement** over simple Baselines to justify their deployment.
 
 ### 5. Metric Realism (KPI Alignment)
-* **The Law**: Use the KPI that matches the business cost of a mistake.
-* **Accuracy**: Only used if classes are perfectly balanced and every error has an equal cost.
-* **Cost of Error**:
-    * If a **False Positive** (wrongly flagging a good customer) is expensive, optimize for **Precision**.
-    * If a **False Negative** (missing a critical leaver) is expensive, optimize for **Recall**.
+* **The Law**: Optimize for the metric that matches the business cost of a mistake (e.g., MAE for value; F1/Precision/Recall for decisions).
 
-### 6. The Bias-Variance Tradeoff (Stability Check)
-* **The Law**: A high score is worthless if it is unstable.
-* **Validation**: Report the **Standard Deviation** of your Cross-Validation scores (e.g., $0.85 \pm 0.05$).
-    * **High Deviation**: Your model has high **Variance** (overfitting to specific slices).
-    * **Consistently Low Score**: Your model has high **Bias** (underfitting).
-* **Goal**: Find the "Sweet Spot" where the error is low and the score is stable across all folds.
+### 8. Mathematical Rigor & Scaling
+* **The Law**: Respect algorithm assumptions. Scaling is mandatory for distance-based logic; extrapolation checks are required for tree-based models.
 
-### 7. The Post-Mortem (Error Analysis)
-* **The Law**: Analyze *why* the model failed on specific rows.
-* **Visuals**: Use Confusion Matrices for classification and Residual Plots for regression to see where the model is systematically biased.
+### 8.1 The Bias Audit (Performance Slicing)
+* **The Law**: A high total score is worthless if it fails on key business segments. Audit performance across slices like Region or Category to ensure fairness.
 
-### 8. Algorithm-Specific Rigor
-* **The Law**: Respect the mathematical assumptions of your chosen tool.
-* **Linear/Distance**: Scaling is mandatory to prevent features with large numbers from dominating.
-* **Trees**: Check for extrapolation; trees cannot predict values higher than what they saw in training.
+### 9.5 Model Persistence (The Handover)
+* **The Law**: Secure the asset. Automatically export the full pipeline with a timestamped versioning system for immediate AWS integration.
 
-### 9. Efficiency via LLM
-* **The Rule**: LLMs are for **Code Execution**, not **Architecture**.
-* **Standard**: I use LLMs to generate boilerplate code and UI widgets, freeing my focus for data strategy, feature engineering, and result interpretation.
+### 10. The Validation Layer (Stakeholder Dashboard)
+* **The Law**: If a stakeholder can't "touch" the model, they won't trust it. Every project ends with an interactive UI to test model intuition in real-time.
 
-### 10. The Validation Layer (Non-Technical UI)
-* **The Law**: If a stakeholder can't "touch" the model, they won't trust it.
-* **Interface**: Every project ends with an `ipywidgets` dashboard.
-* **The Hook**: A GIF in the README showing the model reacting to user input is the final proof of utility.
+### 11. The Environment Lock (AWS Readiness)
+* **The Law**: "It works on my machine" is a failure. Generate a selective `requirements.txt` to lock the exact core library versions used in the experiment.
+
+---
+
+## 🚀 III. The "Sandbox-to-Factory" Workflow
+1.  **Experiment (Colab):** Rapidly iterate using the Mother Templates to find the "Perfect Model."
+2.  **Export (Packaging):** Run Commandments 9.5 and 11 to generate the `.pkl` engine and `requirements.txt` blueprint.
+3.  **Deployment (AWS):** Upload the `Presentation/` folder to AWS. The pipeline handles live data processing automatically, ensuring 100% parity with the experiment.
+
+***
+**Author:** Sebastian Thurm  
+**Standard:** Professional-Grade ML Engineering (v3.0)
