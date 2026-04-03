@@ -8,17 +8,17 @@
 Welcome to my professional portfolio. This repository showcases end-to-end Machine Learning systems designed to solve high-stakes business problems. My approach bridges the gap between **Executive Strategy** (Working Capital & Revenue Growth) and **Production-Grade Engineering** (Scalable MLOps & Hardened Cloud Infrastructure).
 
 ---
-
 ## 🛠️ The ML Gold Standard: Engineering Manifesto
-Every project in this portfolio adheres to my **Business-First Engineering Manifesto** (documented in [**00_Standards**](./00_Standards/)). This framework ensures that models are not just technically accurate, but operationally stable and biased toward business action.
+Every project in this portfolio adheres to my **Business-First Engineering Manifesto** (documented in [**00_ML_Project_Standards**](./00_ML_Project_Standards/)). This framework ensures that models are not just technically accurate, but operationally stable and built for seamless AWS deployment.
 
 | Commandment | Technical Implementation | Business Value |
 | :--- | :--- | :--- |
-| **Infrastructure-as-Code** | AWS CloudFormation & VPC Isolation. | Ensures 100% reproducibility and enterprise-grade security. |
-| **The Wall of Silence** | Strict `train_test_split` before ANY analysis. | Prevents "Data Leakage" and over-optimistic ROI projections. |
-| **Feature Registry** | SageMaker Feature Store implementation. | Eliminates Training-Serving skew for real-time inference. |
-| **Stability Anchors** | Mandatory **Stratified K-Fold Cross-Validation**. | Ensures the model generalizes to new markets/vendors. |
-| **Validation Layer** | Interactive Dashboards & Serverless Endpoints. | Empowers stakeholders to use AI for daily tactical decisions. |
+| **The Sanity Gate** | Automated removal of zero-variance & high-cardinality noise. | Prevents "mirage" learning and ensures data integrity before training. |
+| **The Wall of Silence** | Strict `train_test_split` before ANY analysis or scaling. | Eliminates Data Leakage and prevents over-optimistic ROI projections. |
+| **Transformation Engine** | `scikit-learn` Pipelines for all Preprocessing & Modeling. | Creates portable, versioned assets (.pkl) for zero-skew AWS deployment. |
+| **Stability Anchors** | Mandatory **Stratified K-Fold CV** with Std Dev reporting. | Guarantees the model generalizes consistently across market segments. |
+| **Bias Auditing** | Systematic performance slicing by business category/region. | Ensures model fairness and identifies hidden operational risks. |
+| **Validation Layer** | Interactive `ipywidgets` Dashboards & Serverless Endpoints. | Empowers stakeholders to run "What-If" scenarios for tactical decisions. |
 
 ---
 
