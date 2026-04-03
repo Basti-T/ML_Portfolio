@@ -9,7 +9,7 @@ Welcome to my professional portfolio. This repository showcases end-to-end Machi
 
 ---
 ## 🛠️ The ML Gold Standard: Engineering Manifesto
-Every project in this portfolio adheres to my **Business-First Engineering Manifesto** (documented in [**00_ML_Project_Standards**](./00_ML_Project_Standards/)). This framework ensures that models are not just technically accurate, but operationally stable and built for seamless AWS deployment.
+[**00_ML_Project_Standards**](./00_ML_Project_Standards/)). This framework ensures that models are not just technically accurate, but operationally stable and built for seamless AWS deployment.
 
 | Commandment | Technical Implementation | Business Value |
 | :--- | :--- | :--- |
