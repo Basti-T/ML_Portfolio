@@ -11,7 +11,7 @@ This repository defines my professional standards for Machine Learning Engineeri
 ## 🏛️ Strategic Framework (Executive View)
 *This visual summary outlines the high-level pillars of my methodology. Click the image to access the full documentation.*
 
-[![ML Gold Standard Manifesto](./presentations/The%20ML%20Gold%20Standard%20Business-First%20Engineering.png)](./presentations/The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)
+[![ML Gold Standard Manifesto](./00_ML_Project_Standards/presentations/The%20ML%20Gold%20Standard%20Business-First%20Engineering.png)](./00_ML_Project_Standards/presentations/The%20ML%20Gold%20Standard%20Business-First%20Engineering.pdf)
 
 ---
 
