@@ -8,9 +8,9 @@
 ---
 
 ## 📊 Strategic Executive Summary
-[![Strategic Summary Preview](./presentations/Advanced_Pricing_Engine.png)](./presentations/Advanced_Pricing_Engine.pdf)
+[![Strategic Summary Preview](./presentations/Advanced%20Pricing%20Engine.png)](./presentations/Advanced%20Pricing%20Engine.pdf)
 
-*Click the image above to view the **[Full Strategic Framework PDF](./presentations/Advanced_Pricing_Engine.pdf)***
+*Click the image above to view the **[Full Strategic Framework PDF](./presentations/Advanced%20Pricing%20Engine.pdf)***
 
 ---
 
