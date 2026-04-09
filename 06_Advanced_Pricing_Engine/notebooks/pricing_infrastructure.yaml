@@ -1,0 +1,75 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Pricing Engine Infrastructure'
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: pricing-project
+    Description: 'The name of the project for resource prefixing.'
+  RandomSuffix:
+    Type: String
+    Default: 'v1'
+    Description: 'Change this (e.g., v2, v3) if you hit a naming conflict error.'
+
+Resources:
+  # --- 1. STORAGE (S3) ---
+  # This remains your centralized Data Lake for raw and processed features.
+  DataBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${ProjectName}-data-${AWS::AccountId}-${RandomSuffix}"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  # --- 2. SECURITY (IAM) ---
+  # This role allows SageMaker to talk to your S3 bucket and the Feature Store.
+  SageMakerExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17' 
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: [sagemaker.amazonaws.com]
+            Action: ['sts:AssumeRole']
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSageMakerFeatureStoreAccess
+      Policies:
+        - PolicyName: !Sub "${ProjectName}-s3-access"
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "s3:GetObject"
+                  - "s3:PutObject"
+                  - "s3:ListBucket"
+                  # Permissions required for Offline Feature Store exports [cite: 17, 18]
+                  - "s3:GetBucketAcl"
+                  - "s3:PutObjectAcl"
+                Resource: 
+                  - !GetAtt DataBucket.Arn
+                  - !Sub "${DataBucket.Arn}/*"
+        - PolicyName: "SageMakerExecution"
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "sagemaker:*"
+                  - "logs:CreateLogGroup"
+                  - "logs:CreateLogStream"
+                  - "logs:PutLogEvents"
+                Resource: "*"
+
+Outputs:
+  FinalBucketName:
+    Description: "The name of your S3 Data Lake"
+    Value: !Ref DataBucket
+  SageMakerRoleArn:
+    Description: "The ARN of the SageMaker Execution Role"
+    Value: !GetAtt SageMakerExecutionRole.Arn
